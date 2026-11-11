@@ -10,14 +10,10 @@ Arcade Vault: online gaming platform where players compete for highest scores. E
 
 Workflow is Spec Driven Design via the `/spec` and `/spec-impl` skills (from `npx skills@latest add Klerith/fernando-skills`). Follow those skills' conventions when planning/implementing features.
 
-## Commands
-
-- `npm run dev` — dev server (Turbopack), http://localhost:3000
-- `npm run build` — production build
-- `npm run start` — serve production build
-- `npm run lint` — ESLint (flat config, `eslint-config-next` core-web-vitals + typescript)
-
 No test runner configured yet.
+
+## Skills
+Usa siepre /frontend-design para diseñar interfaces de usuario 
 
 ## Stack / architecture
 
