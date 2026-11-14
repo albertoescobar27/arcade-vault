@@ -13,6 +13,7 @@ export function Nav() {
   const homeActive = pathname === "/";
   const libraryActive = pathname === "/games" || pathname.startsWith("/juegos");
   const hallActive = pathname === "/salon";
+  const aboutActive = pathname === "/about";
   const authActive = pathname === "/auth";
   const close = () => setOpen(false);
 
@@ -29,6 +30,7 @@ export function Nav() {
           <Link href="/" className={homeActive ? "active" : ""}>Inicio</Link>
           <Link href="/games" className={libraryActive ? "active" : ""}>Biblioteca</Link>
           <Link href="/salon" className={hallActive ? "active" : ""}>Salón de la Fama</Link>
+          <Link href="/about" className={aboutActive ? "active" : ""}>Acerca de</Link>
         </div>
         <div className="spacer"></div>
         <div className="coin-counter">
@@ -49,6 +51,7 @@ export function Nav() {
         <Link href="/" className={homeActive ? "active" : ""} onClick={close}>Inicio</Link>
         <Link href="/games" className={libraryActive ? "active" : ""} onClick={close}>Biblioteca</Link>
         <Link href="/salon" className={hallActive ? "active" : ""} onClick={close}>Salón de la Fama</Link>
+        <Link href="/about" className={aboutActive ? "active" : ""} onClick={close}>Acerca de</Link>
         <Link href="/auth" className={authActive ? "active" : ""} onClick={close}>{user ? "Cuenta" : "Iniciar Sesión"}</Link>
         <div style={{ flex: 1 }}></div>
         <div className="pixel" style={{ fontSize: 9, color: "var(--ink-faint)", letterSpacing: "0.16em" }}>CRÉDITOS · 03</div>
